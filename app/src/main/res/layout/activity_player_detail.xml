@@ -41,11 +41,24 @@
         android:ems="10"
         android:inputType="textPersonName" />
 
-    <Button
-        android:text="Back"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonReturn" />
+        android:text="Avg" />
+
+    <EditText
+        android:id="@+id/editTextAvg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" />
 
 
 </LinearLayout>
