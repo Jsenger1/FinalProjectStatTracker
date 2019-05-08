@@ -4,13 +4,13 @@ import java.io.Serializable;
 
 public class Batter implements Serializable {
     private String key;
-    private int atBats;
-    private int hits;
+    private String atBats;
+    private String hits;
     private String playerName;
 
 
 
-    public Batter(String key, int atBats, int hits, String playerNumber){
+    public Batter(String key, String atBats, String hits, String playerNumber){
         this.key = key;
         this.atBats = atBats;
         this.hits = hits;
@@ -25,27 +25,34 @@ public class Batter implements Serializable {
         this.key = key;
     }
 
-    public int getAtBats(){
+    public String getAtBats(){
         return atBats;
     }
-    public void setAtBats(int atBats){
+
+    public void setAtBats(String atBats){
         this.atBats = atBats;
     }
-    public int getHits(){
+
+    public String getHits(){
         return hits;
     }
-    public void setHits(int hits){
+
+    public void setHits(String hits){
         this.hits = hits;
     }
-    public String getPlayerNumber(){
+
+    public String getPlayerName(){
         return playerName;
     }
+
     public void setPlayerNumber(String playerNumber){
         this.playerName = playerNumber;
     }
-    public double calcAvg(){
+
+   /*public double calcAvg(){
         double avg = this.atBats / this.hits;
         return avg;
     }
+    **/
 
 }

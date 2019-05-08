@@ -21,7 +21,7 @@ public class PlayerFirebaseData {
 
     }
 
-    public Batter createPlayer(int atBats, int hits, String playerName) {
+    public Batter createPlayer(String atBats, String hits, String playerName) {
         String key = myPlayerDbRef.child(PlayerDataTag).push().getKey();
         Batter newPlayer = new Batter(key, atBats, hits, playerName);
         myPlayerDbRef.child(key).setValue(newPlayer);

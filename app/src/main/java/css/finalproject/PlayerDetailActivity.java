@@ -30,9 +30,9 @@ public class PlayerDetailActivity extends AppCompatActivity {
         editTextBats.setText(batter.getAtBats());
         editTextHits.setText(batter.getHits());
         // Convert the double into a string
-        Double avg = batter.calcAvg();
-        String avgString = Double.toString(avg);
-        editTextAvg.setText(avgString);
+        //Double avg = batter.calcAvg();
+        //String avgString = Double.toString(avg);
+        //editTextAvg.setText(avgString);
 
 
         // set up button
